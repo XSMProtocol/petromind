@@ -530,8 +530,7 @@
 <script>
     // =============================================
     // 🔑 BACKEND API ENDPOINT
-    // Replace with your Cloudflare Worker URL after deployment
-    // Example: https://petromind-backend.your-username.workers.dev
+    // Cloudflare Worker URL
     // =============================================
     const BACKEND_API = "https://petromind-backend.exo2ic.workers.dev";
     // =============================================
@@ -716,7 +715,7 @@
 
         if (!text || isLoading) return;
 
-        if (BACKEND_API.includes("exo2ic")) {
+        if (BACKEND_API.includes("YOUR_USERNAME")) {
             appendMessage('ai', '⚠️ **Backend Not Configured**\n\nPlease update the `BACKEND_API` variable with your Cloudflare Worker URL.');
             return;
         }
